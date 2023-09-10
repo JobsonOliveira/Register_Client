@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="../CSS/pg_principal.css">
+</head>
+<body>
+    <h1>Usuários cadastrados:</h1>
+    <div id="inform">
+        <div id="divButtons">
+            <button id="mostrar">
+                <img src="https://cdn-icons-png.flaticon.com/128/2546/2546743.png" alt="Imagem de setas indicando atualização">
+            </button>
+            <button id="voltar">REGISTRAR NOVO USUÁRIO</button>
+        </div>
+
+        <textarea name="dadosCliente" id="dadosCliente" cols="60" rows="20" disabled></textarea>
+    </div>
+        
+    <!--SCRIPT-->
+    <script type="text/javascript" src="../JavaScript/requisicao.Js"></script>
+</body>
+<script>
+    document.querySelector("#voltar").addEventListener("click", () => {
+        window.open("../HTML/index.html", "_self");
+    });
+</script>
+</html>

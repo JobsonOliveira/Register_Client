@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://img.freepik.com/fotos-gratis/vista-aerea-da-paisagem-urbana-de-toquio-com-a-montanha-fuji-no-japao_335224-148.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 255, 221);
+}
+
+div#inform{
+    width: 100vh;
+    height: 50%;
+    margin-top: 10%;
+    display: grid;
+    gap: 1vh;
+}
+div#divButtons{
+    display: flex;
+    gap: 1vh;
+    justify-content: center;
+}
+button#mostrar{
+    border-radius: 15px;
+    width: 10vh;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, .4);
+    cursor: pointer;
+}
+button:hover{
+    animation: btnHover 1s infinite linear;
+}
+/*KEYFRAME DE INTERAÇÃ DO BOTÃO*/
+@keyframes btnHover {
+    from{
+        border: 1px solid #00eeff;
+        background-color: #fff;
+        color: #000;
+    }
+    50%{
+        border: 1px solid #001aff;
+        background-color: #5e5c5c;
+        color: #fff;
+    }
+    to{
+        border: 1px solid #00eeff;
+        background-color: #fff;
+        color: #000;
+    }
+}
+#mostrar img{
+    width: 50px;
+}
+button#voltar{
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, .4);
+    cursor: pointer;
+    padding: 1vh;
+}
+textarea{
+    padding: 1vh;
+    border: 2px solid #000;
+    font-size: 2.7vh;
+    background: none;
+    color: #000002;
+    font-weight: bold;
+}
